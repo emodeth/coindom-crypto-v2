@@ -1,0 +1,42 @@
+@import "../../variables";
+
+.mobile-navbar {
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -101%;
+  z-index: 999;
+  background-color: $color-white;
+  transition: 0.3s all;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &__nav-item {
+    color: $color-1;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+}
+
+.mobile-navbar--active {
+  left: 0;
+}

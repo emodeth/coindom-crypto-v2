@@ -1,6 +1,6 @@
 import "./navbar.scss";
 
-function Navbar() {
+function Navbar({ isOpen, setIsOpen }) {
   return (
     <nav>
       <div className="navbar">
@@ -20,9 +20,13 @@ function Navbar() {
           </li>
         </ul>
         <div className="navbar__social">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-discord"></i>
+          <i className="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-discord"></i>
         </div>
+        <i
+          onClick={() => setIsOpen(true)}
+          className="fa-solid fa-bars navbar__menu"
+        ></i>
       </div>
     </nav>
   );

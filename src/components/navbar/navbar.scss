@@ -4,6 +4,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100vw;
 
   background-color: black;
@@ -54,6 +55,30 @@ nav {
       &:hover {
         @include gradient-text;
       }
+    }
+  }
+
+  &__menu {
+    font-size: 2.7rem;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 3rem;
+
+    &__nav {
+      display: none;
+    }
+
+    &__social {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
     }
   }
 }

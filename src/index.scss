@@ -20,6 +20,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  margin: 0 auto !important;
+  max-width: 130rem !important;
+  padding: 0 2.5rem !important;
+}
+
+.inc {
+  color: $color-green !important;
+}
+
+.dec {
+  color: $color-red !important;
+}
+
 /* Firefox */
 * {
   scrollbar-width: thin;

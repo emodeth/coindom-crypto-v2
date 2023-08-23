@@ -9,7 +9,7 @@ function MobileNavbar({ isOpen, setIsOpen }) {
     >
       <i
         onClick={() => setIsOpen(false)}
-        class="fa-solid fa-xmark mobile-navbar__close"
+        className="fa-solid fa-xmark mobile-navbar__close"
       ></i>
 
       <ul className="mobile-navbar__nav">

@@ -1,0 +1,176 @@
+@import "../../variables";
+
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: $gradient-1;
+  text-align: center;
+
+  &__button {
+    font-size: 2rem;
+    color: $color-white;
+    background-image: $gradient-2;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 2rem 4rem;
+    margin-top: 4rem;
+    display: none;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18rem;
+    position: relative;
+  }
+
+  &__text {
+    font-size: 10.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+
+    span {
+      display: block;
+      @include gradient-text;
+    }
+  }
+
+  &__btc {
+    left: -180px;
+  }
+
+  &__eth {
+    right: -180px;
+  }
+
+  &__btc,
+  &__eth {
+    position: absolute;
+    -webkit-animation: move 2s infinite;
+    animation: move 2s infinite;
+    position: absolute;
+    top: -20px;
+  }
+
+  &__coins {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10rem;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .hero {
+    &__btc {
+      left: -200px;
+    }
+
+    &__eth {
+      right: -200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    &__text {
+      font-size: 9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hero {
+    &__btc {
+      left: -220px;
+    }
+
+    &__eth {
+      right: -220px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    &__btc,
+    &__eth {
+      display: none;
+    }
+    &__coins {
+      padding: 0 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .hero {
+    &__text {
+      font-size: 7.5rem;
+    }
+    &__coins {
+      padding: 0 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .hero {
+    &__text {
+      font-size: 6.7rem;
+    }
+    &__coins {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .hero {
+    &__coins {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .hero {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__coins {
+      display: none;
+    }
+
+    &__button {
+      display: block;
+    }
+
+    &__text {
+      font-size: 5rem;
+    }
+  }
+}
+
+@keyframes move {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) scale(0.14);
+    transform: translateY(0) scale(0.14);
+  }
+  50% {
+    -webkit-transform: translateY(-20px) scale(0.14);
+    transform: translateY(-20px) scale(0.14);
+  }
+}

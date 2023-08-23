@@ -1,7 +1,13 @@
+import Hero from "../../components/hero/Hero";
+
 import "./home.scss";
 
 function home() {
-  return <div></div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default home;

@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.pagination-item {
+  background-color: $color-white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+}
+
+.active-page {
+  color: $color-white;
+  background-image: $gradient-2;
+}

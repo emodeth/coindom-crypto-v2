@@ -17,9 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="coin" element={<Coin />}>
-            <Route path=":coinId" element={<Coin />} />
-          </Route>
+          <Route path=":coinId" element={<Coin />} />
         </Routes>
       </BrowserRouter>
     </>

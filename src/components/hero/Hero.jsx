@@ -1,4 +1,5 @@
 import CoinItem from "../coinItem/CoinItem";
+import Loader from "../loader/Loader";
 
 import btcImg from "../../images/bitcoin.png";
 import ethImg from "../../images/ethereum.png";
@@ -28,7 +29,6 @@ function Hero() {
         const res = await fetch(url, options);
         const data = await res.json();
         setSliderCoins(data.data.coins);
-        console.log(data.data.coins);
       } catch {
         throw new Error("Something went wrong with catching coins");
       } finally {
@@ -50,13 +50,15 @@ function Hero() {
           <img className="hero__eth" src={ethImg} alt="ethereum" />
         </div>
         <div className="hero__coins">
-          {sliderCoins.map((coin) => (
-            <CoinItem coin={coin} key={coin.uuid} />
-          ))}
+          {isSliderLoading ? (
+            <Loader />
+          ) : (
+            sliderCoins.map((coin) => <CoinItem coin={coin} key={coin.uuid} />)
+          )}
         </div>
         <button className="hero__button">
           <a href="#market">
-            See Prices <i class="fa-solid fa-angle-down"></i>
+            See Prices <i className="fa-solid fa-angle-down"></i>
           </a>
         </button>
       </div>

@@ -45,7 +45,7 @@ function Market() {
   );
 
   return (
-    <div className="market">
+    <div className="market" id="market">
       <div className="container">
         <h3 className="market__header">Market Update</h3>
         <div className="market__table">

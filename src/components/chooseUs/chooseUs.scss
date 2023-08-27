@@ -1,0 +1,74 @@
+@import "../../variables";
+
+.choose {
+  font-family: "Noto Sans", sans-serif;
+  background-color: $color-1;
+  padding: 10rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    font-size: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 10rem;
+    font-family: "Nato Sans Georgian", sans-serif !important;
+    span {
+      @include gradient-text;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    width: 100%;
+    font-family: "Nato Sans Georgian", sans-serif !important;
+    height: auto;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__col-2 {
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .choose__container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .choose__col-2 {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .choose__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.choose-card {
+  display: flex;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 1px solid hsla(0, 0%, 51%, 0.25);
+  border-radius: 2.4rem;
+  gap: 4rem;
+  padding: 2.4rem;
+  font-family: "Nato Sans Georgian", sans-serif !important;
+
+  &__image-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    i {
+      color: #fff;
+      font-size: 3rem;
+      padding: 1.5rem;
+      background-image: $gradient-2;
+      border-radius: 1.6rem;
+    }
+  }
+
+  &__header {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: inherit;
+    font-family: "Nato Sans Georgian", sans-serif !important;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    color: $color-off-white;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-top: 1rem;
+    font-family: "Nato Sans Georgian", sans-serif !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .choose-card__header {
+    font-size: 2rem;
+  }
+
+  .choose-card__text {
+    font-size: 1.3rem;
+  }
+
+  .choose-card__image-container {
+    i {
+      font-size: 2.5rem;
+    }
+  }
+}

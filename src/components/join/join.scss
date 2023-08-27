@@ -1,0 +1,136 @@
+@import "../../variables";
+
+.join {
+  background-color: $color-1;
+  padding: 10rem 0;
+
+  color: $color-white;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+  }
+
+  &__text {
+    font-size: 10.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+
+    span {
+      display: block;
+      @include gradient-text;
+    }
+  }
+
+  &__btc {
+    left: 0px;
+  }
+
+  &__eth {
+    right: 0px;
+  }
+
+  &__btc,
+  &__eth {
+    position: absolute;
+    -webkit-animation: move 2s infinite;
+    animation: move 2s infinite;
+    position: absolute;
+    top: -16rem;
+  }
+
+  &__desc {
+    font-size: 2.2rem;
+
+    margin-bottom: 10rem;
+    text-align: center;
+  }
+
+  &__button--center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button {
+    font-size: 2rem;
+    color: $color-white;
+    background-image: $gradient-2;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .join__btc {
+    left: -5rem;
+  }
+
+  .join__eth {
+    right: -5rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .join__btc {
+    left: -10rem;
+  }
+
+  .join__eth {
+    right: -10rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .join__btc {
+    left: -15rem;
+  }
+
+  .join__eth {
+    right: -15rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .join__text {
+    font-size: 7rem;
+  }
+  .join__btc {
+    display: none;
+  }
+
+  .join__eth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .join__text {
+    font-size: 6rem;
+  }
+
+  .join__desc {
+    font-size: 1.8rem;
+  }
+}
+
+@keyframes move {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) scale(0.16);
+    transform: translateY(0) scale(0.16);
+  }
+  50% {
+    -webkit-transform: translateY(-20px) scale(0.16);
+    transform: translateY(-20px) scale(0.16);
+  }
+}

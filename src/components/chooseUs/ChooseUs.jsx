@@ -5,7 +5,7 @@ import "./chooseUs.scss";
 
 function ChooseUs() {
   return (
-    <div className="choose">
+    <div className="choose" id="choose">
       <div className="container">
         <h2 className="choose__header">
           Why <span>Choose Us</span>

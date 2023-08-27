@@ -3,6 +3,7 @@ import Market from "../../components/market/Market";
 import ChooseUs from "../../components/chooseUs/ChooseUs";
 
 import "./home.scss";
+import Join from "../../components/join/Join";
 
 function home() {
   return (
@@ -10,6 +11,7 @@ function home() {
       <Hero />
       <Market />
       <ChooseUs />
+      <Join />
     </>
   );
 }

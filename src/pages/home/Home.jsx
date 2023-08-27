@@ -4,6 +4,7 @@ import ChooseUs from "../../components/chooseUs/ChooseUs";
 
 import "./home.scss";
 import Join from "../../components/join/Join";
+import Footer from "../../components/footer/Footer";
 
 function home() {
   return (
@@ -12,6 +13,7 @@ function home() {
       <Market />
       <ChooseUs />
       <Join />
+      <Footer />
     </>
   );
 }

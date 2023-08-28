@@ -8,7 +8,7 @@ The website is connected to the Coinranking API, which is a popular source of da
 
 </p>
 
-👉 Live Demo: <a href='https://coindom-crypto-search.vercel.app/'>Coindom Demo</a>
+👉 Live Demo: <a href='https://coindom-crypto.vercel.app/'>Coindom Demo</a>
 
 <h3>Build with:</h3>
 

@@ -11,6 +11,12 @@ nav {
   background-color: transparent;
 }
 
+.sticky-nav {
+  background-color: $color-1;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
+  position: fixed !important;
+}
+
 .navbar {
   display: flex;
   align-items: center;

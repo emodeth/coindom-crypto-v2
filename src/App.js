@@ -11,13 +11,14 @@ function App() {
 
   return (
     <>
-      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
-      <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
-
       <BrowserRouter>
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path=":coinId" element={<Coin />} />
+          <Route path="coin" element={<Coin />}>
+            <Route path=":coinId" element={<Coin />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

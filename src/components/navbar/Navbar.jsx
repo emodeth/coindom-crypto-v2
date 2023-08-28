@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./navbar.scss";
+import { Link } from "react-router-dom";
 
 function Navbar({ isOpen, setIsOpen }) {
   const [isSticky, setIsSticky] = useState(false);
@@ -13,7 +14,9 @@ function Navbar({ isOpen, setIsOpen }) {
   return (
     <nav className={isSticky ? "sticky-nav" : ""}>
       <div className="navbar">
-        <h2 className="navbar__logo">Coindom</h2>
+        <Link to={"/"}>
+          <h2 className="navbar__logo">Coindom</h2>
+        </Link>
         <ul className="navbar__nav">
           <li className="navbar__nav-item">
             <a href="#home">Home</a>

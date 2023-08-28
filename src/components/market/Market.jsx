@@ -32,7 +32,6 @@ function Market() {
           const res = await fetch(url, options);
           const data = await res.json();
           setMarketCoins(data.data.coins);
-          console.log(data.data.coins);
         } catch {
           throw new Error("Something went wrong with catching coins");
         } finally {

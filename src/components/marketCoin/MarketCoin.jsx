@@ -15,10 +15,10 @@ function numberWithCommas(price) {
 }
 
 function MarketCoin({ coin }) {
-  const { name, price, iconUrl, marketCap } = coin;
+  const { name, price, iconUrl, marketCap, symbol } = coin;
 
   return (
-    <Link to={`${name.toLowerCase()}`}>
+    <Link to={`coin/${symbol.toLowerCase()}`}>
       <div className="market-coin">
         <div className="market-coin__coin">
           <img className="market-coin__image" src={iconUrl} alt="btc" />

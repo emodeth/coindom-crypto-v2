@@ -23,14 +23,14 @@ The website is connected to the Coinranking API, which is a popular source of da
 <h3 align='center'>Home Page 🏡</h3>
 
 <div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/220608661-496fee0b-740a-476f-afa5-be9889c3c798.png'/>
+<img src='https://img001.prntscr.com/file/img001/jp9VYoNGRbStHvYk3uyMKg.png'/>
 
 </div>
 
 <br><br>
 
-<h3 align='center'>Coin Page 🪙</h3>
+<h3 align='center'>Coin Page </h3>
 
 <div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/220609015-e64cb000-b8d2-41ce-8a9a-e610d2f1ae5b.png'/>
+<img src='https://img001.prntscr.com/file/img001/uOr8Q75NS42OMhXG19ooEA.png'/>
 </div>

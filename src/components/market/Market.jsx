@@ -58,7 +58,9 @@ function Market() {
           {isMarketLoading ? (
             <Loader />
           ) : (
-            marketCoins.map((coin) => <MarketCoin coin={coin} />)
+            marketCoins.map((coin) => (
+              <MarketCoin coin={coin} key={coin.uuid} />
+            ))
           )}
 
           <Pagination page={page} setPage={setPage} />

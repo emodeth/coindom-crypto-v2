@@ -12,7 +12,7 @@ function CoinItem({ coin }) {
   const { name, iconUrl, symbol, price, change } = coin;
 
   return (
-    <Link to={`coin/${name.toLowerCase()}`}>
+    <Link to={`${name.toLowerCase()}`}>
       <div className="coin-item">
         <img className="coin-item__img" src={iconUrl} alt={symbol} />
         <div className="coin-item__content">

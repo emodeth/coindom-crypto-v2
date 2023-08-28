@@ -23,7 +23,7 @@ function MobileNavbar({ isOpen, setIsOpen }) {
           onClick={() => setIsOpen(false)}
           className="mobile-navbar__nav-item"
         >
-          <a href="#arket">Market</a>
+          <a href="#market">Market</a>
         </li>
         <li
           onClick={() => setIsOpen(false)}

@@ -18,7 +18,7 @@ function MarketCoin({ coin }) {
   const { name, price, iconUrl, marketCap } = coin;
 
   return (
-    <Link to={`coin/bitcoin`}>
+    <Link to={`${name.toLowerCase()}`}>
       <div className="market-coin">
         <div className="market-coin__coin">
           <img className="market-coin__image" src={iconUrl} alt="btc" />

@@ -37,7 +37,8 @@ const descriptions = [
     symbol: "usdc",
   },
   {
-    description: "",
+    description:
+      "Cardano is an ecosystem that allows other developers to create tokens, decentralized applications (dApps), or other use cases for scalable blockchain network. Cardano uses PoS in its consensus and doesn't reward its cryptocurrency as an incentive in a competitive mining process like Bitcoin does.",
     symbol: "ada",
   },
   {
@@ -273,6 +274,7 @@ function Coin() {
     if (item.symbol === coinId) {
       return item.description;
     }
+    return null;
   });
 
   const url = `https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&search=${coinId}&orderDirection=desc&limit=1&offset=0`;

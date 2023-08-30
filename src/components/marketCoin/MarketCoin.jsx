@@ -17,6 +17,7 @@ function numberWithCommas(price) {
 function MarketCoin({ coin }) {
   const { name, price, iconUrl, marketCap, symbol } = coin;
 
+  console.log(symbol);
   return (
     <Link to={`coin/${symbol.toLowerCase()}`}>
       <div className="market-coin">

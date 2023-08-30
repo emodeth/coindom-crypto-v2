@@ -51,7 +51,7 @@ function Market() {
           <div className="market__table-header">
             <p className="market__table-coin">Coin</p>
             <p className="market__table-price">Price</p>
-            <p className="market__table-volume">24h Volume</p>
+            <p className="market__table-change">Change</p>
             <p className="market__table-cap">Market Cap</p>
           </div>
           {isMarketLoading ? (

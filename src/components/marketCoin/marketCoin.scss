@@ -37,8 +37,9 @@
     text-align: right;
   }
 
-  &__volume {
+  &__change {
     width: 25%;
+    font-size: bold;
     text-align: right;
   }
   &__cap {
@@ -58,7 +59,7 @@
       text-align: center;
     }
 
-    &__volume {
+    &__change {
       display: none;
     }
 
@@ -79,7 +80,7 @@
       text-align: right;
     }
 
-    &__volume {
+    &__change {
       display: none;
     }
 
@@ -100,7 +101,7 @@
       display: none;
     }
 
-    &__volume {
+    &__change {
       display: none;
     }
 

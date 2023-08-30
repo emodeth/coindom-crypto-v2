@@ -15,9 +15,8 @@ function numberWithCommas(price) {
 }
 
 function MarketCoin({ coin }) {
-  const { name, price, iconUrl, marketCap, symbol } = coin;
+  const { name, price, iconUrl, marketCap, symbol, change } = coin;
 
-  console.log(symbol);
   return (
     <Link to={`coin/${symbol.toLowerCase()}`}>
       <div className="market-coin">
@@ -26,8 +25,10 @@ function MarketCoin({ coin }) {
           <p className="market-coin__name">{name}</p>
         </div>
         <p className="market-coin__price">$ {numberWithCommasPrice(price)}</p>
-        <p className="market-coin__volume">
-          $ {numberWithCommas(coin["24hVolume"])}
+        <p
+          className={`${"market-coin__change"} ${change >= 0 ? "inc" : "dec"}`}
+        >
+          {change} %
         </p>
         <p className="market-coin__cap">$ {numberWithCommas(marketCap)}</p>
       </div>
